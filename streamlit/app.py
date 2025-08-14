@@ -26,7 +26,7 @@ st.sidebar.header("Navigation")
 section = st.sidebar.radio("Go to", ["Overview", "Visualisations", "Model Prediction", "Model Performance", "About"])
 
 # Load data + model
-df = load_data('WineQT.csv')
+df = load_data('C:\Users\USER\OneDrive\Desktop\streamlit\WineQT.csv')
 model, scaler = load_model(path_model='model.pkl', path_scaler='scaler.pkl')
 
 if section == "Overview":
