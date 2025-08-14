@@ -26,7 +26,7 @@ st.sidebar.header("Navigation")
 section = st.sidebar.radio("Go to", ["Overview", "Visualisations", "Model Prediction", "Model Performance", "About"])
 
 # Load data + model
-df = load_data('C:\Users\USER\OneDrive\Desktop\streamlit\WineQT.csv')
+df = load_data('streamlit/data')
 model, scaler = load_model(path_model='model.pkl', path_scaler='scaler.pkl')
 
 if section == "Overview":
@@ -99,3 +99,4 @@ elif section == "About":
     - Model trained with scikit-learn
     - App includes EDA, visualization, prediction and performance
     """)
+
