@@ -27,7 +27,7 @@ section = st.sidebar.radio("Go to", ["Overview", "Visualisations", "Model Predic
 
 # Load data + model
 df = load_data('streamlit/WineQT.csv')
-model, scaler = load_model(path_model='model.pkl', path_scaler='scaler.pkl')
+model, scaler = load_model(path_model='streamlit/model.pkl', path_scaler='scaler.pkl')
 
 if section == "Overview":
     st.header("Dataset Overview")
@@ -99,6 +99,7 @@ elif section == "About":
     - Model trained with scikit-learn
     - App includes EDA, visualization, prediction and performance
     """)
+
 
 
 
