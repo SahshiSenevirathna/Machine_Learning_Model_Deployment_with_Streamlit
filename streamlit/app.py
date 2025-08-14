@@ -13,7 +13,7 @@ def load_data(path):
     return pd.read_csv(path)
 
 @st.cache_resource
-def load_model(path_model='../model.pkl', path_scaler='../scaler.pkl'):
+def load_model(path_model='streamlit/model.pkl', path_scaler='../scaler.pkl'):
     model = joblib.load(path_model)
     scaler = joblib.load(path_scaler)
     return model, scaler
@@ -99,5 +99,6 @@ elif section == "About":
     - Model trained with scikit-learn
     - App includes EDA, visualization, prediction and performance
     """)
+
 
 
